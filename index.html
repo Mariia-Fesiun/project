@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кулінарна школа</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="img/logo.jpg" alt="Логотип" class="logo">
+            <nav class="desktop-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="about.html">Про нас</a></li>
+                    <li><a href="office.html">Особистий кабінет</a></li>
+                    <li><a href="contact.html">Контакти</a></li>
+                </ul>
+            </nav>
+            <div class="dropdown">
+                <button class="dropbtn">Меню</button>
+                <div class="dropdown-content">
+                    <a href="index.html">Головна</a>
+                    <a href="about.html">Про нас</a>
+                    <a href="office.html">Особистий кабінет</a>
+                    <a href="contact.html">Контакти</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="home" class="container">
+            <h1>Ласкаво просимо до Кулінарної школи!</h1>
+            <p>Ми навчаємо перетворювати прості інгредієнти в кулінарні шедеври.</p>
+            <p>На курсі ви здобудете практичні навички, які допомагають стати професійними кухарями навіть вдома.</p>
+            <section id="benefits">
+                <h2>Чому обирають нас?</h2>
+                <ul>
+                    <li>Досвідчені викладачі – найкращі шеф-кухарі світу.</li>
+                    <li>Доступ до сучасної кухонної техніки.</li>
+                    <li>Сертифікат після завершення кожного курсу.</li>
+                </ul>
+            </section>
+        </section>
+        <section id="courses" class="container">
+            <article class="product-card new-product">
+                <img src="img/italian_cuisine.jpg" class="product-image" alt="Італійська кухня">
+                <h2 class="product-title">Курс: Італійська кухня</h2>
+                <p>Дата наступного потоку: 25 березня (доступ до курсу відкривається одразу)</p>
+                <p>Формат: онлайн / офлайн</p>
+                <p>Тривалість: 3 місяці навчання + доступ до матеріалів протягом 1 року</p>
+                <p class="price">200$</p>
+                <label for="modal-italian-buy" class="buy-button">Купити</label>
+                <label for="modal-italian" class="more-button">Детальніше</label>
+            </article>
+
+            <input type="checkbox" id="modal-italian-buy" class="modal-toggle hidden">
+            <div class="modal">
+                <div class="modal-content">
+                    <h2>Ваше замовлення</h2>
+                    <p><span>Курс:</span> Італійська кухня</p>
+                    <p><span>Сума:</span> 200$.</p>
+                    <form>
+                        <label for="name">Ваше ім'я:</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="surname">Ваше прізвище:</label>
+                        <input type="text" id="surname" name="surname" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="phone">Телефон:</label>   
+                        <input type="tel" id="phone" name="phone" required>   
+                        <button type="submit">Оплатити</button>
+                    </form>
+                    <p>У разі питань - пишіть у нашу службу турботи https://t.me/culinaryschool.</p>
+                    <label for="modal-italian-buy" class="modal-close">Закрити</label>
+                </div>
+            </div>
+
+            <input type="checkbox" id="modal-italian" class="modal-toggle hidden">
+            <div class="modal">
+                <div class="modal-content">
+                    <h2>Курс: Італійська кухня</h2>
+                    <p>Навчіться готувати класичні страви Італії, такі як паста та піца. Досвідчений викладач поділиться секретами приготування цих популярних страв, а також іншими італійськими делікатесами. Ідеально для початківців та досвідчених кулінарів, хто хоче освоїти традиційну італійську кухню.</p>
+                    <label for="modal-italian" class="modal-close">Закрити</label>
+                </div>
+            </div>
+
+
+            <article class="product-card">
+                <img src="img/french_cuisine.jpg" class="product-image" alt="Французька кухня">
+                <h2 class="product-title">Курс: Французька кухня</h2>
+                <p>Дата наступного потоку: 25 березня (доступ до курсу відкривається одразу)</p>
+                <p>Формат: онлайн / офлайн</p>
+                <p>Тривалість: 2 місяці навчання + доступ до матеріалів протягом 1 року</p>
+                <p class="price">250$</p>
+                <label for="modal-french-buy" class="buy-button">Купити</label>
+                <label for="modal-french" class="more-button">Детальніше</label>
+            </article>
+
+            <input type="checkbox" id="modal-french-buy" class="modal-toggle hidden">
+            <div class="modal">
+                <div class="modal-content">
+                    <h2>Ваше замовлення</h2>
+                    <p><span>Курс:</span> Французька кухня</p>
+                    <p><span>Сума:</span> 250$.</p>
+                    <form>
+                        <label for="name">Ваше ім'я:</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="surname">Ваше прізвище:</label>
+                        <input type="text" id="surname" name="surname" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="phone">Телефон:</label>   
+                        <input type="tel" id="phone" name="phone" required>   
+                        <button type="submit">Оплатити</button>
+                    </form>
+                    <p>У разі питань - пишіть у нашу службу турботи https://t.me/culinaryschool.</p>
+                    <label for="modal-french-buy" class="modal-close">Закрити</label>
+                </div>
+            </div>
+
+                <input type="checkbox" id="modal-french" class="modal-toggle hidden">
+                <div class="modal">
+                    <div class="modal-content">
+                        <h2>Курс: Французька кухня</h2>
+                        <p>Зануртесь у світ вишуканих французьких десертів і соусів. Опануйте мистецтво приготування круасанів, еклерів, а також навчіться готувати різноманітні соуси, які є основою французької кулінарії. Курс підходить як для новачків, так і для тих, хто вже має досвід у куховарстві.</p>
+                        <label for="modal-french" class="modal-close">Закрити</label>
+                    </div>
+                </div>
+
+
+            <article class="product-card">
+                <img src="img/asian_cuisine.jpg" class="product-image" alt="Азійська кухня">
+                <h2 class="product-title">Курс: Азійська кухня</h2>
+                <p>Дата наступного потоку: 25 березня (доступ до курсу відкривається одразу)</p>
+                <p>Формат: онлайн / офлайн</p>
+                <p>Тривалість: 2 місяці навчання + доступ до матеріалів протягом 1 року</p>
+                <p class="price">230$</p>
+                <label for="modal-asian-buy" class="buy-button">Купити</label>
+                <label for="modal-asian" class="more-button">Детальніше</label>
+            </article>
+            
+            <input type="checkbox" id="modal-asian-buy" class="modal-toggle hidden">
+            <div class="modal">
+                <div class="modal-content">
+                    <h2>Ваше замовлення</h2>
+                    <p><span>Курс:</span> Азійська кухня</p>
+                    <p><span>Сума:</span> 230$.</p>
+                    <form>
+                        <label for="name">Ваше ім'я:</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="surname">Ваше прізвище:</label>
+                        <input type="text" id="surname" name="surname" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="phone">Телефон:</label>   
+                        <input type="tel" id="phone" name="phone" required>   
+                        <button type="submit">Оплатити</button>
+                    </form>
+                    <p>У разі питань - пишіть у нашу службу турботи https://t.me/culinaryschool.</p>
+                    <label for="modal-asian-buy" class="modal-close">Закрити</label>
+                </div>
+            </div>
+
+                <input type="checkbox" id="modal-asian" class="modal-toggle hidden">
+                <div class="modal">
+                    <div class="modal-content">
+                        <h2>Курс: Азійська кухня</h2>
+                        <p>Розкрийте секрети азійської кухні, від суші до локшини, з використанням ароматних спецій та інгредієнтів. Курс для любителів екзотичних смаків та тих, хто хоче навчитися готувати справжні азійські страви вдома.</p>
+                        <label for="modal-asian" class="modal-close">Закрити</label>
+                    </div>
+                </div>
+
+                
+            <article class="product-card">
+                <img src="img/baking.jpg" class="product-image" alt="Випічка">
+                <h2 class="product-title">Курс: Мистецтво випічки</h2>
+                <p>Дата наступного потоку: 25 березня (доступ до курсу відкривається одразу)</p>
+                <p>Формат: онлайн / офлайн</p>
+                <p>Тривалість: 2 місяці навчання + доступ до матеріалів протягом 1 року</p>
+                <p class="price">180$</p>
+                <label for="modal-baking-buy" class="buy-button">Купити</label>
+                <label for="modal-baking" class="more-button">Детальніше</label>
+            </article>
+
+            <input type="checkbox" id="modal-baking-buy" class="modal-toggle hidden">
+            <div class="modal">
+                <div class="modal-content">
+                    <h2>Ваше замовлення</h2>
+                    <p><span>Курс:</span> Мистецтво випічки</p>
+                    <p><span>Сума:</span> 180$.</p>
+                    <form>
+                        <label for="name">Ваше ім'я:</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="surname">Ваше прізвище:</label>
+                        <input type="text" id="surname" name="surname" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="phone">Телефон:</label>   
+                        <input type="tel" id="phone" name="phone" required>   
+                        <button type="submit">Оплатити</button>
+                    </form>
+                    <p>У разі питань - пишіть у нашу службу турботи https://t.me/culinaryschool.</p>
+                    <label for="modal-baking-buy" class="modal-close">Закрити</label>
+                </div>
+            </div>
+
+                <input type="checkbox" id="modal-baking" class="modal-toggle hidden">
+                <div class="modal">
+                    <div class="modal-content">
+                        <h2>Курс: Мистецтво випічки</h2>
+                        <p>Опануйте випічку хліба, тортів, пирогів та десертів. Вивчіть техніки створення ідеальної випічки, включаючи замішування тіста та оформлення десертів. Ідеальний курс для тих, хто хоче стати майстром випічки.</p>
+                        <label for="modal-baking" class="modal-close">Закрити</label>
+                    </div>
+                </div>
+
+            <article class="product-card">
+                <img src="img/homemade_food.jpg" class="product-image" alt="Домашня кухня">
+                <h2 class="product-title">Курс: Домашня кухня</h2>
+                <p>Дата наступного потоку: 25 березня (доступ до курсу відкривається одразу)</p>
+                <p>Формат: онлайн / офлайн</p>
+                <p>Тривалість: 1,5 місяці навчання + доступ до матеріалів протягом 1 року</p>
+                <p class="price">150$</p>
+                <label for="modal-homemade-buy" class="buy-button">Купити</label>
+                <label for="modal-homemade" class="more-button">Детальніше</label>
+            </article>
+
+                <input type="checkbox" id="modal-homemade-buy" class="modal-toggle hidden">
+                <div class="modal">
+                    <div class="modal-content">
+                        <h2>Ваше замовлення</h2>
+                        <p><span>Курс:</span> Домашня кухня</p>
+                        <p><span>Сума:</span> 150$.</p>
+                        <form>
+                            <label for="name">Ваше ім'я:</label>
+                            <input type="text" id="name" name="name" required>
+                            <label for="surname">Ваше прізвище:</label>
+                            <input type="text" id="surname" name="surname" required>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                            <label for="phone">Телефон:</label>   
+                            <input type="tel" id="phone" name="phone" required>   
+                            <button type="submit">Оплатити</button>
+                        </form>
+                        <p>У разі питань - пишіть у нашу службу турботи https://t.me/culinaryschool.</p>
+                        <label for="modal-homemade-buy" class="modal-close">Закрити</label>
+                    </div>
+                </div>
+
+                <input type="checkbox" id="modal-homemade" class="modal-toggle hidden">
+                <div class="modal">
+                    <div class="modal-content">
+                        <h2>Курс: Домашня кухня</h2>
+                        <p>Опануйте приготування традиційних українських страв, таких як борщ, вареники, а також різноманітні гарніри. Курс підходить для новачків, хто хоче вдосконалити свої навички у приготуванні домашньої їжі.</p>
+                        <label for="modal-homemade" class="modal-close">Закрити</label>
+                    </div>
+                </div>
+
+            <article class="product-card">
+                <img src="img/sea_world.jpg" class="product-image" alt="Морський світ">
+                <h2 class="product-title">Курс: Морський світ</h2>
+                <p>Дата наступного потоку: 25 березня (доступ до курсу відкривається одразу)</p>
+                <p>Формат: онлайн / офлайн</p>
+                <p>Тривалість: 4 місяці навчання + доступ до матеріалів протягом 1 року</p>
+                <p class="price">280$</p>
+                <label for="modal-sea-buy" class="buy-button">Купити</label>
+                <label for="modal-sea" class="more-button">Детальніше</label>
+            </article>
+
+                <input type="checkbox" id="modal-sea-buy" class="modal-toggle hidden">
+                <div class="modal">
+                    <div class="modal-content">
+                        <h2>Ваше замовлення</h2>
+                        <p><span>Курс:</span> Морський світ</p>
+                        <p><span>Сума:</span> 280$.</p>
+                        <form>
+                            <label for="name">Ваше ім'я:</label>
+                            <input type="text" id="name" name="name" required>
+                            <label for="surname">Ваше прізвище:</label>
+                            <input type="text" id="surname" name="surname" required>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                            <label for="phone">Телефон:</label>   
+                            <input type="tel" id="phone" name="phone" required>   
+                            <button type="submit">Оплатити</button>
+                        </form>
+                        <p>У разі питань - пишіть у нашу службу турботи https://t.me/culinaryschool.</p>
+                        <label for="modal-sea-buy" class="modal-close">Закрити</label>
+                    </div>
+                </div>
+
+                <input type="checkbox" id="modal-sea" class="modal-toggle hidden">
+                <div class="modal">
+                    <div class="modal-content">
+                        <h2>Курс: Морський світ</h2>
+                        <p>Дізнайтесь, як готувати морські делікатеси, такі як краби, морські коники та інші страви з морепродуктів. Курс ідеальний для тих, хто хоче навчитися працювати з морськими продуктами на професійному рівні.</p>
+                        <label for="modal-sea" class="modal-close">Закрити</label>
+                    </div>
+                </div>
+
+
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2016 Кулінарна школа | Всі права захищено</p>
+    </footer>
+</body>
+</html>
